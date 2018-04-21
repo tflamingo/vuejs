@@ -1,6 +1,5 @@
 <template>
     <div>
-        {{msg}}
         <Header></Header>
         <TodoList></TodoList>
         <Footer></Footer>

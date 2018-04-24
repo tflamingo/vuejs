@@ -27,9 +27,9 @@
         <table>
             <thead>
                 <tr>
-                    <th>Name:</th>
+                    <th>Name</th>
                     <th>Age</th>
-                    <th>sex</th>
+                    <th>Sex</th>
                     <th>Delete</th>
                 </tr>
             </thead>
@@ -65,7 +65,7 @@
             }
         },
         methods: {
-            createPerson: function(){
+            createPerson: function() {
                 if(this.newPerson.name === '') {
                     alert('姓名不能为空');
                     return;
@@ -76,10 +76,10 @@
                     return;
                 }   
                 this.people.push(this.newPerson);
+                   
                 this.newPerson = {name:'', age:0, sex:'Male'};
             },
             deletePerson: function(index) {
-                alert(index);
                 this.people.splice(index, 1);
             }
         }

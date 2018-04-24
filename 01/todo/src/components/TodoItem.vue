@@ -1,6 +1,10 @@
 <template>
     <div :class="['todo-item', todo.completed ? 'completed' : '']">
+<<<<<<< HEAD
         <input type="checkbox" class="toggle" v-model="todo.completed">
+=======
+        <input type="checkbox" v-model="todo.completed">
+>>>>>>> e96e889186955463017e86a38ffbe1d62b1ce702
         <label>{{todo.ctx}}</label>
         <button class="destory" @click="deleteTodo"></button>
     </div>
@@ -24,11 +28,23 @@
 <style>
 .todo-item{
   position: relative;
+<<<<<<< HEAD
   background-color: #fff;
   font-size: 24px;
   border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 .label {
+=======
+  left:20%;
+  height: 50px;
+  background-color: #fff;
+  font-size: 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+
+}
+
+.todo-item.label {
+>>>>>>> e96e889186955463017e86a38ffbe1d62b1ce702
     white-space: pre-line;
     word-break: break-all;
     padding: 15px 60px 15px 15px;
@@ -38,11 +54,20 @@
     transition: color 0.4s;
 }
 
+<<<<<<< HEAD
 .completed{
       position: relative;
   background-color: #fff;
   font-size: 24px;
   border-bottom: 1px solid rgba(0,0,0,0.06);
+=======
+
+.todo-item.completed{
+      position: relative;
+    background-color: #fff;
+    font-size: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+>>>>>>> e96e889186955463017e86a38ffbe1d62b1ce702
       white-space: pre-line;
     word-break: break-all;
     padding: 15px 60px 15px 15px;
